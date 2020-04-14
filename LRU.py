@@ -9,10 +9,20 @@ class LRU:
         self.content_map = {}
 
     def put(self, key, value):
-        pass
+        if key in self.content_map:
+            self.obj_q.remove(key)
+        elif self.max_size <= len(self.content_map):
+            removed_key = self.obj_q.pop()
+            del self.content_map[removed_key]
+        self.obj_q.appendleft(key)
+        self.content_map[key] = value
 
     def get(self, key):
-        pass
+        if key in self.content_map:
+            self.obj_q.remove(key)
+            self.obj_q.appendleft(key)
+            return self.content_map[key]
+        return -1
 
     def get_cache(self):
-        pass
+        return self.content_map
