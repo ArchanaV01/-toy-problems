@@ -1,6 +1,6 @@
-import LRU
+from LRU import LRU
 class LRUTest:
-    def __main__():
+    def main():
         lru_obj = LRU(3)
         #tc1
         assert lru_obj.get('a')==-1
@@ -17,3 +17,6 @@ class LRUTest:
         assert len(lru_obj.get_cache())==3, 'capacity crossed'
         #tc6
         assert lru_obj.get('a')==-1, 'Least Recently Used is not being removed when capacity is crossed'
+
+    if __name__ == "__main__":
+        main()
