@@ -1,0 +1,37 @@
+button {
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+h1 {
+    padding: 10px 10px 10px 10px;
+    color: rgb(7, 6, 102);
+}
+
+header {
+    background-color: rgba(185, 37, 111, 0.637);
+    padding: 2% 2% 2% 2%;
+    border-radius: 5px;
+}
+
+div {
+    display: inline-block;
+}
+
+li {
+    font-size: x-large;
+}
+
+input {
+    font-size: larger;
+}
+
+ul {
+    /* color: rgb(255, 255, 255); */
+    /* width: 100%; */
+    /* padding: 2% 2% 2% 2%; */
+    border-radius: 5px;
+    /* padding: 10% 10% 10% 10%; */
+    /* margin: 2% 2% 2% 2%; */
+    /* background-color: darkcyan; */
+}
